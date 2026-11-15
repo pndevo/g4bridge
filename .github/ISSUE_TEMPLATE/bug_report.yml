@@ -1,0 +1,29 @@
+name: Bug report
+description: The bridge does not connect, or a button / axis is wrong
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: Console output of g4bridge.py (the last lines are enough)
+    validations:
+      required: true
+  - type: input
+    id: pad
+    attributes:
+      label: Pad model and firmware
+      placeholder: "GameSir G4, firmware 2.13 (USB ID 05AC:2405)"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Windows version and Bluetooth adapter
+      placeholder: "Windows 11 25H2, MediaTek MT7922"
+    validations:
+      required: true
+  - type: textarea
+    id: sdp
+    attributes:
+      label: Is there a "WirelessCom" serial service?
+      description: See the last section of FINDINGS.md if your firmware may differ

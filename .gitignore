@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+bt_map.json
+*.log
+*.etl
+*.csv
+.venv/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+dist/
+*.pdf
+target/

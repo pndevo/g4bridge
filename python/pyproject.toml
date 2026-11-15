@@ -1,0 +1,29 @@
+[project]
+name = "g4bridge"
+version = "0.1.0"
+description = "Use a GameSir G4 gamepad over Bluetooth on Windows via RFCOMM and a virtual Xbox 360 controller"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = ["vgamepad>=0.1.0"]
+keywords = ["gamesir", "g4", "bluetooth", "gamepad", "xinput", "vigem", "windows"]
+classifiers = [
+    "Operating System :: Microsoft :: Windows",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Hardware",
+]
+
+[project.urls]
+Homepage = "https://github.com/pndevo/g4bridge"
+Issues = "https://github.com/pndevo/g4bridge/issues"
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
